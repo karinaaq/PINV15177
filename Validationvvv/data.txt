@@ -1,0 +1,4 @@
+ter1.png ter1_mask.png
+ter2.png ter2_mask.png
+ter3.png ter3_mask.png
+ter4.png ter4_mask.png

@@ -1,0 +1,4 @@
+ter1.jpg ter1_mask.jpg
+ter2.jpg ter2_mask.jpg
+ter3.jpg ter3_mask.jpg
+ter4.jpg ter4_mask.jpg
