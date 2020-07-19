@@ -210,15 +210,12 @@ class Models:
         #reshape1 = Reshape((input_shape[0]*input_shape[1], classes))(conv10)
         #x = Activation("softmax")(reshape1)
 
-        model = keras.Model(inputs=[inputs], outputs=[conv10])
+        model = Model(inputs=[inputs], outputs=[conv10])
         
         
-        config = model.get_config()
-        new_model= model.from_config(config)
-        
-        new_model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
+        model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
 
-        return new_model
+        return model
     
     def get_unet_model_2(self, input_shape, classes, loss, metrics):
         inputs = Input(shape=input_shape)#, dtype=tf.float16)
@@ -244,15 +241,11 @@ class Models:
 
         conv10 = Conv2D(1, (1, 1), activation='sigmoid')(conv9)  #sigmoid
 
-        model = keras.Model(inputs=[inputs], outputs=[conv10])
+        model = Model(inputs=[inputs], outputs=[conv10])
         
-        
-        config = model.get_config()
-        new_model= model.from_config(config)
-        
-        new_model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
+        model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
 
-        return new_model
+        return model
     
     def get_unet_model_3(self, input_shape, classes, loss, metrics):
         inputs = Input(shape=input_shape)#, dtype=tf.float16)
@@ -285,15 +278,11 @@ class Models:
 
         conv10 = Conv2D(1, (1, 1), activation='sigmoid')(conv9)  #sigmoid
 
-        model = keras.Model(inputs=[inputs], outputs=[conv10])
+        model = Model(inputs=[inputs], outputs=[conv10])
         
-        
-        config = model.get_config()
-        new_model= model.from_config(config)
-        
-        new_model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
+        model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
 
-        return new_model
+        return model
     
     def get_unet_model_4(self, input_shape, classes, loss, metrics):
         inputs = Input(shape=input_shape)#, dtype=tf.float16)
@@ -326,15 +315,11 @@ class Models:
 
         conv10 = Conv2D(1, (1, 1), activation='sigmoid')(conv9)  #sigmoid
 
-        model = keras.Model(inputs=[inputs], outputs=[conv10])
+        model = Model(inputs=[inputs], outputs=[conv10])
         
-        
-        config = model.get_config()
-        new_model= model.from_config(config)
-        
-        new_model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
+        model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
 
-        return new_model
+        return model
     
     def get_unet_model_5(self, input_shape, classes, loss, metrics):
         inputs = Input(shape=input_shape)#, dtype=tf.float16)
@@ -375,15 +360,12 @@ class Models:
 
         conv10 = Conv2D(1, (1, 1), activation='sigmoid')(conv9)  #sigmoid
 
-        model = keras.Model(inputs=[inputs], outputs=[conv10])
+        model = Model(inputs=[inputs], outputs=[conv10])
         
         
-        config = model.get_config()
-        new_model= model.from_config(config)
-        
-        new_model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
+        model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
 
-        return new_model
+        return model
     
     def get_unet_model_6(self, input_shape, classes, loss, metrics):
         inputs = Input(shape=input_shape)#, dtype=tf.float16)
@@ -424,14 +406,11 @@ class Models:
 
         conv10 = Conv2D(1, (1, 1), activation='sigmoid')(conv9)  #sigmoid
 
-        model = keras.Model(inputs=[inputs], outputs=[conv10])
+        model = Model(inputs=[inputs], outputs=[conv10])
         
-        config = model.get_config()
-        new_model= model.from_config(config)
-        
-        new_model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
+        model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
 
-        return new_model
+        return model
     
     def get_unet_model_7(self, input_shape, classes, loss, metrics):
         #Mobile net v2 medium
@@ -460,14 +439,10 @@ class Models:
 
         conv10 = Conv2D(1, (1, 1), activation='sigmoid')(conv9)  #sigmoid
 
-        model = keras.Model(inputs=[inputs], outputs=[conv10])
-        
-        config = model.get_config()
-        new_model= model.from_config(config)
-        
-        new_model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
+        model = Model(inputs=[inputs], outputs=[conv10])
+        model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
 
-        return new_model
+        return model
     
     def get_unet_model_8(self, input_shape, classes, loss, metrics):
         #Mobile net v2 large
@@ -502,15 +477,11 @@ class Models:
 
         conv10 = Conv2D(1, (1, 1), activation='sigmoid')(conv9)  #sigmoid
 
-        model = keras.Model(inputs=[inputs], outputs=[conv10])
+        model = Model(inputs=[inputs], outputs=[conv10])
         
-        
-        config = model.get_config()
-        new_model= model.from_config(config)
-        
-        new_model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
+        model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
 
-        return new_model
+        return model
     
     def get_unet_model_9(self, input_shape, classes, loss, metrics):
         # Mobile net v1 small
@@ -537,15 +508,12 @@ class Models:
 
         conv10 = Conv2D(1, (1, 1), activation='sigmoid')(conv9)  #sigmoid
 
-        model = keras.Model(inputs=[inputs], outputs=[conv10])
+        model = Model(inputs=[inputs], outputs=[conv10])
         
         
-        config = model.get_config()
-        new_model= model.from_config(config)
-        
-        new_model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
+        model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
 
-        return new_model
+        return model
     
     def get_unet_model_10(self, input_shape, classes, loss, metrics):
         # Mobile net v1 medium
@@ -579,14 +547,10 @@ class Models:
 
         conv10 = Conv2D(1, (1, 1), activation='sigmoid')(conv9)  #sigmoid
 
-        model = keras.Model(inputs=[inputs], outputs=[conv10])
-        
-        config = model.get_config()
-        new_model= model.from_config(config)
-        
-        new_model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
+        model = Model(inputs=[inputs], outputs=[conv10])
+        model.compile(optimizer=Adam(lr=1e-5), loss=loss, metrics=metrics)
 
-        return new_model
+        return model
 
 
 # In[ ]:
