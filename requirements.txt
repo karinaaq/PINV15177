@@ -1,9 +1,9 @@
 matplotlib
-tensorflow-gpu
+tensorflow
 scikit-learn
 imgaug
 Keras
-PIL
+pillow
 scipy
 opencv_python
 numpy
